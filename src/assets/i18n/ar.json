@@ -1,3 +1,14 @@
 {
-    
+    "SETTINGS": {
+        "language": "اللغة",
+        "your-account": "حسابك",
+        "login": "تسجيل دخول",
+        "logout":"تسجيل خروج",
+        "ar": "العربية - ar",
+        "en": "الانجليزية - en"
+    },
+    "TOURNAMENTS": {
+        "tournaments": "البطولات",
+        "sponsorship-of-tournaments": "رعاية البطولة"
+    }
 }

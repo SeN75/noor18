@@ -1,0 +1,58 @@
+<mat-toolbar class="header-navbar" [style.direction]="lang.dir">
+
+    <mat-toolbar-row>
+        <nav class="social-medila">
+            <fa-icon matRipple [matRippleCentered]="center" [icon]="icons.facebook"></fa-icon>
+            <fa-icon matRipple [matRippleCentered]="center" [icon]="icons.twitter"></fa-icon>
+            <fa-icon matRipple [matRippleCentered]="center" [icon]="icons.insta"></fa-icon>
+            <fa-icon matRipple [matRippleCentered]="center" [icon]="icons.twitch"></fa-icon>
+        </nav>
+        <span class="spacer"></span>
+        <mat-menu #language="matMenu">
+            <button (click)="lang.ar()" mat-menu-item>
+                <span>{{'SETTINGS.ar' | translate}}</span>
+            </button>
+            <button (click)="lang.en()" mat-menu-item>
+                <span>{{'SETTINGS.en' | translate}}</span>
+            </button>
+        </mat-menu>
+        <nav class="account">
+            <button mat-button [matMenuTriggerFor]="language">
+                <mat-icon color="primary">expand_more</mat-icon>
+                {{'SETTINGS.language' | translate}}
+
+            </button>
+            <span class="space">/</span>
+            <button mat-button *ngIf="user.isLogin">{{'SETTINGS.your-account' | translate}}</button>
+            <span *ngIf="user.isLogin" class="space">/</span>
+            <button mat-button (click)="user.isLogin = !user.isLogin">{{(user.isLogin ?'SETTINGS.logout' :
+                'SETTINGS.login') | translate}}</button>
+        </nav>
+    </mat-toolbar-row>
+
+    <mat-toolbar-row>
+        <nav class="nav">
+            <button mat-button>{{ 'TOURNAMENTS.tournaments'| translate}}</button>
+            <button mat-button>{{ 'TOURNAMENTS.sponsorship-of-tournaments'| translate}}</button>
+        </nav>
+        <span class="spacer"></span>
+        <img class="logo" src="../../../../assets/image/logo.jpg">
+        <span class="spacer"></span>
+        <nav class="search">
+            <input type="text">
+            <button mat-icon-button>
+                <mat-icon color="primary">search</mat-icon>
+            </button>
+        </nav>
+        <button mat-icon-button class="menu-toggle">
+            <mat-icon>
+                menu
+            </mat-icon>
+        </button>
+    </mat-toolbar-row>
+</mat-toolbar>
+
+<!-- 
+<section class="side-menu">
+
+</section> -->

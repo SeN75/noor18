@@ -1,0 +1,85 @@
+@import "../../../../scss/theme";
+.social-medila mat-icon,
+.social-medila fa-icon {
+  cursor: pointer;
+  padding: 0 14px;
+  font-size: 15px;
+  opacity: 0.8;
+}
+.social-medila mat-icon:hover,
+.social-medila fa-icon:hover {
+  color: var(--primary);
+  opacity: 1;
+}
+.spacer {
+  flex: 1 1 auto;
+}
+.header-navbar {
+  background-color: var(--black);
+  color: var(--white);
+}
+
+.account span {
+  font-size: 14px;
+}
+.space {
+  color: var(--primary);
+  margin: 0 10px;
+}
+
+.nav button {
+  font-size: 20px;
+  margin: 0 10px;
+  color: var(--primary);
+}
+
+.search {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  border: none;
+  background-color: var(--white);
+  border-radius: 25px;
+  width: 320px;
+  height: 50px;
+}
+
+.search input {
+  border: transparent !important;
+  box-shadow: none;
+  outline: none;
+}
+
+.logo {
+  margin-top: 40px;
+  width: 130px;
+  height: auto;
+}
+.menu-toggle {
+  display: none;
+}
+.side-menu {
+  display: flex;
+  top: 0;
+  left: 0;
+  width: 240px;
+  background-color: var(--black);
+  color: var(--white);
+  height: 100%;
+  z-index: 100;
+}
+@media screen and (max-width: 624px) {
+  .social-medila,
+  .search,
+  .account,
+  .nav {
+    display: none;
+  }
+  .logo {
+    margin-top: 60px;
+  }
+  .menu-toggle {
+    display: inline-block;
+  }
+}

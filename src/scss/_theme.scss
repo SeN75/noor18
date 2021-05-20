@@ -1,3 +1,5 @@
+@import "~@angular/material/theming";
+@include mat-core();
 :root {
   --primary: #d7b56d;
   --secondary: #727271;
@@ -5,3 +7,84 @@
   --white: #fefefe;
   --gray: #ebecec;
 }
+
+$noor-primary: (
+  50: #f8f6f1,
+  100: #fcf4e3,
+  200: #fff2d4,
+  300: #fdeabf,
+  400: #fde6b4,
+  500: #fada96,
+  600: #e9c77e,
+  700: #d7b56d,
+  800: #c29f54,
+  900: #a5833b,
+  A100: #fada96,
+  A200: #e9c77e,
+  A400: #d7b56d,
+  A700: #a5833b,
+  contrast: (
+    50: #000000,
+    100: #000000,
+    200: #000000,
+    300: #000000,
+    400: #ffffff,
+    500: #ffffff,
+    600: #ffffff,
+    700: #ffffff,
+    800: #ffffff,
+    900: #ffffff,
+    A100: #000000,
+    A200: #000000,
+    A400: #000000,
+    A700: #000000,
+  ),
+);
+$noor-secondary: (
+  50: #ffffff,
+  100: #f0f0f0,
+  200: #e4e4e4,
+  300: #d6d6d6,
+  400: #c5c5c5,
+  500: #adadab,
+  600: #91918f,
+  700: #727271,
+  800: #5e5e5d,
+  900: #414141,
+  A100: #adadab,
+  A200: #91918f,
+  A400: #727271,
+  A700: #414141,
+  contrast: (
+    50: #000000,
+    100: #000000,
+    200: #000000,
+    300: #000000,
+    400: #ffffff,
+    500: #ffffff,
+    600: #ffffff,
+    700: #ffffff,
+    800: #ffffff,
+    900: #ffffff,
+    A100: #000000,
+    A200: #000000,
+    A400: #000000,
+    A700: #000000,
+  ),
+);
+
+$noor18-primary: mat-palette($noor-primary);
+$noor18-accent: mat-palette($noor-secondary);
+
+// The warn palette is optional (defaults to red).
+$noor18-warn: mat-palette($mat-red);
+$noor18-theme: mat-light-theme(
+  (
+    color: (
+      primary: $noor18-primary,
+      accent: $noor18-accent,
+      warn: $noor18-warn,
+    ),
+  )
+);
+@include angular-material-theme($noor18-theme);

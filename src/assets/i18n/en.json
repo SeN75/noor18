@@ -1,2 +1,14 @@
 {
+    "SETTINGS": {
+        "language": "language",
+        "your-account": "your-account",
+        "login": "login",
+        "logout":"logout",
+        "ar": "Arabic - ar",
+        "en": "English - en"
+    },
+    "TOURNAMENTS": {
+        "tournaments": "tournaments",
+        "sponsorship-of-tournaments": "sponsorship of tournaments"
+    }
 }
