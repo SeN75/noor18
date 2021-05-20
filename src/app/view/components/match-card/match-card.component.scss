@@ -1,0 +1,51 @@
+@import "../../../../scss/theme";
+.match-card {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  max-width: 420px;
+  border: 1px solid var(--gray);
+  box-shadow: 0px 5px 10px var(--gray);
+  border-radius: 20px;
+  padding: 10px 20px;
+  direction: rtl;
+}
+
+.teams {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.teams .team1,
+.teams .team2 {
+  display: flex;
+  text-align: center;
+  flex-direction: column;
+}
+
+.team-logo {
+  display: block;
+  width: 80px;
+  height: auto;
+}
+.team-name {
+  font-size: large;
+  color: var(--black);
+  font-weight: bolder;
+}
+.score {
+  align-self: center;
+  font-size: 50px;
+  color: var(--secondary);
+}
+
+.data-and-time {
+  border-top: 1px solid var(--gray);
+  padding-top: 20px;
+  text-align: start;
+}
+
+.league {
+  color: var(--primary);
+}

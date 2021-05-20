@@ -9,6 +9,7 @@
     },
     "TOURNAMENTS": {
         "tournaments": "tournaments",
-        "sponsorship-of-tournaments": "sponsorship of tournaments"
+        "sponsorship-of-tournaments": "sponsorship of tournaments",
+        "now-playing": "now playing"
     }
 }

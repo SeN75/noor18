@@ -23,6 +23,7 @@ import { BaseComponent } from './view/components/base/base.component';
 import { NavbarComponent } from './view/components/navbar/navbar.component';
 import { FooterComponent } from './view/components/footer/footer.component';
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
+import { MatchCardComponent } from './view/components/match-card/match-card.component';
 // functions for translet service {
 export function HttpLoaderFactory(httpClient: HttpClient) {
   return new TranslateHttpLoader(httpClient, './assets/i18n/', '.json');
@@ -34,7 +35,8 @@ export function HttpLoaderFactory(httpClient: HttpClient) {
     LandingpageComponent,
     BaseComponent,
     NavbarComponent,
-    FooterComponent
+    FooterComponent,
+    MatchCardComponent
   ],
   imports: [
     BrowserModule,

@@ -1,5 +1,8 @@
 <navbar></navbar>
-<section>
-
+<section class="p-5">
+    <h4>match card</h4>
+    <div class="row">
+        <match-card *ngFor="let match of matches" [match]="match" class="col"></match-card>
+    </div>
 </section>
 <footer></footer>
