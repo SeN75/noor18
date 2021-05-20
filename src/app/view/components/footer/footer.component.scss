@@ -1,0 +1,28 @@
+@import "../../../../scss/theme";
+
+section {
+  background-color: var(--black);
+  padding: 20px;
+  color: var(--white);
+}
+.social-medila {
+  background-color: var(--black);
+}
+.social-medila div {
+  padding-top: 20px;
+  display: flex;
+  justify-content: space-around;
+  color: var(--white);
+  background-color: var(--black);
+  border-top: 1px solid var(--white);
+  font-size: 20px;
+}
+.social-medila fa-icon {
+  margin: 0 10px;
+  font-size: 30px;
+  color: var(--primary);
+}
+.social-medila span {
+  flex-wrap: wrap;
+  align-items: center;
+}
