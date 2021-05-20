@@ -1,6 +1,6 @@
-<mat-toolbar class="header-navbar" [style.direction]="lang.dir">
+<mat-toolbar class="header-navbar " [style.direction]="lang.dir">
 
-    <mat-toolbar-row>
+    <mat-toolbar-row class="container">
         <nav class="social-medila">
             <fa-icon matRipple [matRippleCentered]="center" [icon]="icons.facebook"></fa-icon>
             <fa-icon matRipple [matRippleCentered]="center" [icon]="icons.twitter"></fa-icon>
@@ -30,7 +30,7 @@
         </nav>
     </mat-toolbar-row>
 
-    <mat-toolbar-row>
+    <mat-toolbar-row class="container">
         <nav class="nav">
             <button mat-button>{{ 'TOURNAMENTS.tournaments'| translate}}</button>
             <button mat-button>{{ 'TOURNAMENTS.sponsorship-of-tournaments'| translate}}</button>
