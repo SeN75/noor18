@@ -6,12 +6,23 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 
 
+import { MatToolbarModule } from '@angular/material/toolbar';
+import { MatIconModule } from '@angular/material/icon';
+import { MatButtonModule } from '@angular/material/button';
+import { MatMenuModule } from '@angular/material/menu';
+import { MatRippleModule } from '@angular/material/core';
+import { MatSidenavModule } from '@angular/material/sidenav';
+
+
 import { TranslateModule, TranslateLoader } from '@ngx-translate/core';
 import { TranslateHttpLoader } from '@ngx-translate/http-loader';
 import { HttpClient, HttpClientModule } from '@angular/common/http';
 import { DashboardComponent } from './view/dashboard/dashboard.component';
 import { LandingpageComponent } from './view/landingpage/landingpage.component';
 import { BaseComponent } from './view/components/base/base.component';
+import { NavbarComponent } from './view/components/navbar/navbar.component';
+import { FooterComponent } from './view/components/footer/footer.component';
+import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 // functions for translet service {
 export function HttpLoaderFactory(httpClient: HttpClient) {
   return new TranslateHttpLoader(httpClient, './assets/i18n/', '.json');
@@ -21,13 +32,21 @@ export function HttpLoaderFactory(httpClient: HttpClient) {
     AppComponent,
     DashboardComponent,
     LandingpageComponent,
-    BaseComponent
+    BaseComponent,
+    NavbarComponent,
+    FooterComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     BrowserAnimationsModule,
     HttpClientModule,
+    MatToolbarModule,
+    MatButtonModule,
+    MatRippleModule,
+    MatMenuModule,
+    MatSidenavModule,
+    MatIconModule,
     TranslateModule,
     TranslateModule.forRoot({
       loader: {
@@ -35,7 +54,8 @@ export function HttpLoaderFactory(httpClient: HttpClient) {
         useFactory: HttpLoaderFactory,
         deps: [HttpClient]
       }
-    })
+    }),
+    FontAwesomeModule
   ],
   providers: [],
   bootstrap: [AppComponent]
