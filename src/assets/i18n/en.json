@@ -11,6 +11,8 @@
         "tournaments": "tournaments",
         "sponsorship-of-tournaments": "sponsorship of tournaments",
         "now-playing": "now playing",
-        "upcoming-events": "upcoming events"
+        "upcoming-events": "upcoming events",
+        "current-tournaments": "current tournaments",
+        "previous-tournaments": "Previous tournaments"
     }
 }

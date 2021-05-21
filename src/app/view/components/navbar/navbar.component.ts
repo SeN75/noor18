@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { ICON, user } from 'src/app/_common/globle';
 import { LanguageService } from 'src/app/_services/language.service';
+import { Router, Routes } from '@angular/router';
 
 @Component({
   selector: 'navbar',
@@ -12,9 +13,11 @@ export class NavbarComponent implements OnInit {
   user = user;
   center = true;
   color = '';
-  constructor(public lang: LanguageService) { }
+  constructor(public lang: LanguageService, private route: Router) { }
 
   ngOnInit(): void {
   }
-
+  gotoTournments() {
+    this.route.navigateByUrl("/tournaments");
+  }
 }

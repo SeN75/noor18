@@ -1,23 +1,6 @@
 <navbar></navbar>
 <section class="container py-5" [dir]="lang.dir">
-    <div class="row">
-        <h1 class="title">{{'TOURNAMENTS.now-playing' | translate}}</h1>
-        <ngx-slick-carousel class="carousel row" #slickModal="slick-carousel" [config]="matchesConfig"
-            (init)="slickInit($event)" (breakpoint)="breakpoint($event)" (afterChange)="afterChange($event)"
-            (beforeChange)="beforeChange($event)">
-            <match-card ngxSlickItem *ngFor="let match of matchs;" [match]="match" class="col-12 col-sm-6 col-md-4">
-            </match-card>
-
-        </ngx-slick-carousel>
-
-        <h1 class="title">{{'TOURNAMENTS.upcoming-events' | translate}}</h1>
-        <ngx-slick-carousel class="carousel row" #slickModal="slick-carousel" [config]="postsConfig"
-            (init)="slickInit($event)" (breakpoint)="breakpoint($event)" (afterChange)="afterChange($event)"
-            (beforeChange)="beforeChange($event)">
-            <post-ads ngxSlickItem *ngFor="let post of posts;" [post]="post" class="col-12 col-sm-6 col-md-4">
-            </post-ads>
-
-        </ngx-slick-carousel>
-    </div>
+    <router-outlet>
+    </router-outlet>
 </section>
 <footer></footer>

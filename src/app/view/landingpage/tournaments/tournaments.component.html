@@ -1,0 +1,9 @@
+<section class="container py-5" [dir]="lang.dir">
+
+    <h1 class="title">{{'TOURNAMENTS.current-tournaments' | translate}}</h1>
+    <tournaments-info-card *ngFor="let tour of tournaments" [tournament]="tour"></tournaments-info-card>
+
+    <h1 class="title mt-5">{{'TOURNAMENTS.previous-tournaments' | translate}}</h1>
+    <tournaments-info-card *ngFor="let tour of tournaments" [tournament]="tour"></tournaments-info-card>
+
+</section>

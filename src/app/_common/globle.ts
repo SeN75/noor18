@@ -49,3 +49,15 @@ export const posts = [
     { category: "esport", path: ".", post_image: "post-img3.jpg", date: "2021/5/2", title: "A new mage character is coming to the league", details: "Lorem ipsum dolor sit amet, consectetur adipisi nela elit, sed do eiusmod tempore der incididunt" },
     { category: "esport", path: ".", post_image: "post-img5.jpg", date: "2021/5/2", title: "A new mage character is coming to the league", details: "Lorem ipsum dolor sit amet, consectetur adipisi nela elit, sed do eiusmod tempore der incididunt" },
 ]
+
+export const tournaments = [
+    {
+        name: 'A new mage character is coming to the league', details: 'Lorem ipsum dolor sit amet, consectetur adipisi nela elit, sed do eiusmod tempore der incididunt ', poster: 'post-img3.jpg'
+    },
+    {
+        name: 'A new mage character is coming to the league', details: 'Lorem ipsum dolor sit amet, consectetur adipisi nela elit, sed do eiusmod tempore der incididunt ', poster: 'post-img5.jpg'
+    },
+    {
+        name: 'A new mage character is coming to the league', details: 'Lorem ipsum dolor sit amet, consectetur adipisi nela elit, sed do eiusmod tempore der incididunt ', poster: 'post-img3.jpg'
+    }
+]

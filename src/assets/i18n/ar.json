@@ -11,7 +11,9 @@
         "tournaments": "البطولات",
         "sponsorship-of-tournaments": "رعاية البطولة",
         "now-playing": "مباريات جارية الان",
-        "upcoming-events": "احداث قادمة"
+        "upcoming-events": "احداث قادمة",
+        "current-tournaments": "البطولات الحالية",
+        "previous-tournaments": "البطولات السابقة"
 
     }
 }

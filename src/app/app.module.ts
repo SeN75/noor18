@@ -19,13 +19,12 @@ import { TranslateHttpLoader } from '@ngx-translate/http-loader';
 import { HttpClient, HttpClientModule } from '@angular/common/http';
 import { DashboardComponent } from './view/dashboard/dashboard.component';
 import { LandingpageComponent } from './view/landingpage/landingpage.component';
-import { BaseComponent } from './view/components/base/base.component';
-import { NavbarComponent } from './view/components/navbar/navbar.component';
-import { FooterComponent } from './view/components/footer/footer.component';
+
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
-import { MatchCardComponent } from './view/components/match-card/match-card.component';
-import { PostAdsComponent } from './view/components/post-ads/post-ads.component';
+
 import { SlickCarouselModule } from 'ngx-slick-carousel';
+import { LandingPageModule } from './view/landingpage/landingpage.module';
+import { BasesModule } from './view/components/bases.module';
 
 // functions for translet service {
 export function HttpLoaderFactory(httpClient: HttpClient) {
@@ -36,16 +35,12 @@ export function HttpLoaderFactory(httpClient: HttpClient) {
     AppComponent,
     DashboardComponent,
     LandingpageComponent,
-    BaseComponent,
-    NavbarComponent,
-    FooterComponent,
-    MatchCardComponent,
-    PostAdsComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     BrowserAnimationsModule,
+    LandingPageModule,
     HttpClientModule,
     MatToolbarModule,
     MatButtonModule,
@@ -54,6 +49,7 @@ export function HttpLoaderFactory(httpClient: HttpClient) {
     MatSidenavModule,
     MatIconModule,
     SlickCarouselModule,
+    BasesModule,
     TranslateModule,
     TranslateModule.forRoot({
       loader: {

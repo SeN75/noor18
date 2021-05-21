@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { matchs, posts } from 'src/app/_common/globle';
+import { tournaments } from './../../../_common/globle';
 
 @Component({
   selector: 'app-base',
@@ -9,6 +10,7 @@ import { matchs, posts } from 'src/app/_common/globle';
 export class BaseComponent implements OnInit {
   matches = matchs;
   posts = posts;
+  tournaments = tournaments;
   constructor() { }
 
   ngOnInit(): void {
