@@ -1,6 +1,7 @@
 @import "../../../../scss/theme";
 
 .tournament-card {
+  cursor: pointer;
   width: 100%;
   background-color: var(--white);
   border: 1px solid var(--gray);
