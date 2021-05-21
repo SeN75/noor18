@@ -16,8 +16,17 @@
     text-align: right;
   }
   .tournament-card,
-  .registr-card {
+  .registr-card,
+  .card {
     direction: rtl;
+  }
+  .checkbox .checkbox-indicator {
+    left: unset;
+    right: 0;
+  }
+  .checkbox.checkbox-inline {
+    padding-right: 24px;
+    padding-left: unset;
   }
 }
 .container[dir="ltr"] {
@@ -25,8 +34,18 @@
     text-align: left;
   }
   .tournament-card,
-  .registr-card {
+  .registr-card,
+  .card {
     direction: ltr;
+  }
+  .checkbox .checkbox-indicator {
+    left: 0;
+    right: unset;
+  }
+
+  .checkbox.checkbox-inline {
+    padding-left: 24px;
+    padding-right: unset;
   }
 }
 
