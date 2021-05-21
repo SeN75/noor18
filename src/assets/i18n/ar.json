@@ -15,5 +15,10 @@
         "current-tournaments": "البطولات الحالية",
         "previous-tournaments": "البطولات السابقة"
 
+    },
+    "FORM" : {
+        "registr": "تسجيل",
+        "platform": "منصة اللعبة",
+        "agree":"اقر بقرائة الشروط و الاحكام " 
     }
 }

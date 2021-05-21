@@ -14,5 +14,10 @@
         "upcoming-events": "upcoming events",
         "current-tournaments": "current tournaments",
         "previous-tournaments": "Previous tournaments"
+    },
+    "FORM" : {
+        "registr": "registr",
+        "platform": "game platform",
+        "agree":"I have read the terms and conditions" 
     }
 }
