@@ -19,12 +19,17 @@ import { MatFormFieldModule } from '@angular/material/form-field';
 import { MatInputModule } from '@angular/material/input';
 import { MatSelectModule } from '@angular/material/select';
 import { MatCheckboxModule } from '@angular/material/checkbox';
+import { ChampionshipSponsorshipComponent } from './championship-sponsorship/championship-sponsorship.component';
+import { RouterModule } from '@angular/router';
+import { OwnerRequestComponent } from './owner-request/owner-request.component';
 
 @NgModule({
     declarations: [
         TournamentsComponent,
         HomeComponent,
-        TournamentsRegistrComponent
+        TournamentsRegistrComponent,
+        ChampionshipSponsorshipComponent,
+        OwnerRequestComponent
     ],
     imports: [
         BrowserModule,
@@ -41,7 +46,9 @@ import { MatCheckboxModule } from '@angular/material/checkbox';
         MatFormFieldModule,
         MatInputModule,
         MatSelectModule,
-        FontAwesomeModule
+        FontAwesomeModule,
+        RouterModule,
+
 
     ],
     exports: [TournamentsComponent,

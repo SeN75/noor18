@@ -1,0 +1,40 @@
+<div class="row  card-1 justify-content-between align-items-center p-4 my-3">
+    <h1 class="col">{{'FORM.compelete-company-profile' | translate}}</h1>
+    <div class="col-8 col-md-4">
+        <button [routerLink]="['/home']"
+            class=" w-100 btn btn-primary-inverse btn-lg btn-block">{{'FORM.compelete-profile'
+            |
+            translate}}</button>
+    </div>
+</div>
+
+<div class="row card card-1 py-4">
+    <mat-form-field appearance="outline" class="col-12">
+        <mat-label>{{'TOURNAMENTS.request-title' | translate}}</mat-label>
+        <input matInput>
+    </mat-form-field>
+
+    <mat-form-field appearance="outline" class="col-12">
+        <mat-label>{{'TOURNAMENTS.brief' | translate}}</mat-label>
+        <textarea rows="10" matInput></textarea>
+    </mat-form-field>
+</div>
+
+<div class="row justify-content-between align-items-end">
+    <div class="col-12 col-md-4 ">
+
+        <section class="checkbox-group">
+            <h3>{{'TOURNAMENTS.request-type' | translate}}</h3>
+            <mat-checkbox color="primary" class="mr-2 ml-2">{{'TOURNAMENTS.create-a-tournament' | translate}}
+            </mat-checkbox>
+            <mat-checkbox color="primary" class="mr-2 ml-2">{{'TOURNAMENTS.providing-sponsorship' | translate}}
+            </mat-checkbox>
+        </section>
+    </div>
+    <div class="col-8 col-md-4">
+        <button [routerLink]="['/home']"
+            class=" w-100 btn btn-primary-inverse btn-lg btn-block">{{'FORM.submit-your-request'
+            |
+            translate}}</button>
+    </div>
+</div>
