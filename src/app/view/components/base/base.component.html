@@ -4,5 +4,9 @@
     <div class="row">
         <match-card *ngFor="let match of matches" [match]="match" class="col"></match-card>
     </div>
+
+    <div class="row">
+        <post-ads *ngFor="let post of posts" [post]="post" class="col"> </post-ads>
+    </div>
 </section>
 <footer></footer>

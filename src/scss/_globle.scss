@@ -8,3 +8,16 @@
   font-size: 12px;
   font-weight: 500;
 }
+.title {
+  margin-top: 20px !important;
+}
+.container[dir="rtl"] {
+  .title {
+    text-align: right;
+  }
+}
+.container[dir="ltr"] {
+  .title {
+    text-align: left;
+  }
+}

@@ -10,7 +10,8 @@
     "TOURNAMENTS": {
         "tournaments": "البطولات",
         "sponsorship-of-tournaments": "رعاية البطولة",
-        "now-playing": "مباريات جارية الان"
+        "now-playing": "مباريات جارية الان",
+        "upcoming-events": "احداث قادمة"
 
     }
 }

@@ -1,0 +1,18 @@
+<div class="post-card" [dir]="lang.dir">
+    <figure class="post-thumb">
+        <div class="post-cat">
+            <span class="post-cat-label">{{post.category}}</span>
+        </div>
+        <a>
+            <img src="../../../../assets/images/esports/{{post.post_image}}">
+        </a>
+    </figure>
+    <div class="post-body">
+        <a class="post-cta"></a>
+        <time class="post-date">{{post.date | date}}</time>
+        <h6 class="post-title "><a>{{post.title}}</a></h6>
+        <div class="post-excerpt">{{post.details}}</div>
+
+    </div>
+
+</div>

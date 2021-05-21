@@ -24,6 +24,9 @@ import { NavbarComponent } from './view/components/navbar/navbar.component';
 import { FooterComponent } from './view/components/footer/footer.component';
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 import { MatchCardComponent } from './view/components/match-card/match-card.component';
+import { PostAdsComponent } from './view/components/post-ads/post-ads.component';
+import { SlickCarouselModule } from 'ngx-slick-carousel';
+
 // functions for translet service {
 export function HttpLoaderFactory(httpClient: HttpClient) {
   return new TranslateHttpLoader(httpClient, './assets/i18n/', '.json');
@@ -36,7 +39,8 @@ export function HttpLoaderFactory(httpClient: HttpClient) {
     BaseComponent,
     NavbarComponent,
     FooterComponent,
-    MatchCardComponent
+    MatchCardComponent,
+    PostAdsComponent
   ],
   imports: [
     BrowserModule,
@@ -49,6 +53,7 @@ export function HttpLoaderFactory(httpClient: HttpClient) {
     MatMenuModule,
     MatSidenavModule,
     MatIconModule,
+    SlickCarouselModule,
     TranslateModule,
     TranslateModule.forRoot({
       loader: {
