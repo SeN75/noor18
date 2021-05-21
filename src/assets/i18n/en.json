@@ -13,7 +13,13 @@
         "now-playing": "now playing",
         "upcoming-events": "upcoming events",
         "current-tournaments": "current tournaments",
-        "previous-tournaments": "Previous tournaments"
+        "previous-tournaments": "Previous tournaments",
+        "request-type": "request type",
+        "request-title": "request title",
+        "brief": "brief",
+        "create-a-tournament": "create a tournament",
+        "providing-sponsorship":"providing sponsorship"
+
     },
     "FORM" : {
         "registr": "registr",
@@ -28,7 +34,10 @@
         "click-here": "click here",
         "register-now": "register now",
         "create-your-account": "create your account",
-        "repeat-password": "repeat password"
+        "repeat-password": "repeat password",
+        "submit-your-request": "submit your request",
+        "compelete-company-profile": "You must complete the company file",
+        "compelete-profile": "compelete profile"
 
     }
 }

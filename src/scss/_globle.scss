@@ -217,3 +217,14 @@
 }
 
 /* post-ads style */
+
+.card-1 {
+  background-color: var(--white);
+  border-color: var(--gray);
+  color: var(--black);
+}
+
+.mat-checkbox .mat-checkbox-label,
+mat-checkbox .mat-checkbox-label {
+  color: var(--secondary) !important;
+}

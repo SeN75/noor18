@@ -33,7 +33,8 @@
     <mat-toolbar-row class="container">
         <nav class="nav">
             <button mat-button (click)="gotoTournments()">{{ 'TOURNAMENTS.tournaments'| translate}}</button>
-            <button mat-button routerLink=".">{{ 'TOURNAMENTS.sponsorship-of-tournaments'| translate}}</button>
+            <button mat-button [routerLink]="['/sponsorship']">{{ 'TOURNAMENTS.sponsorship-of-tournaments'|
+                translate}}</button>
         </nav>
         <span class="spacer"></span>
         <img class="logo" src="../../../../assets/image/logo.jpg">

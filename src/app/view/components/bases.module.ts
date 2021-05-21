@@ -16,6 +16,7 @@ import { MatMenuModule } from '@angular/material/menu';
 import { MatRippleModule } from '@angular/material/core';
 import { MatSidenavModule } from '@angular/material/sidenav';
 import { TournamentsInfoCardComponent } from './tournaments-info-card/tournaments-info-card.component';
+import { RouterModule } from "@angular/router";
 @NgModule({
     declarations: [
         BaseComponent,
@@ -26,6 +27,7 @@ import { TournamentsInfoCardComponent } from './tournaments-info-card/tournament
         TournamentsInfoCardComponent],
     imports: [
         BrowserModule,
+        RouterModule,
         TranslateModule,
         FontAwesomeModule,
         MatToolbarModule,

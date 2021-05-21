@@ -13,7 +13,12 @@
         "now-playing": "مباريات جارية الان",
         "upcoming-events": "احداث قادمة",
         "current-tournaments": "البطولات الحالية",
-        "previous-tournaments": "البطولات السابقة"
+        "previous-tournaments": "البطولات السابقة",
+        "request-type": "نوع الطلب",
+        "request-title": "عنوان الطلب",
+        "brief": "نبذه مختصره",
+        "create-a-tournament": "انشاء بطولة",
+        "providing-sponsorship":"تقديم رعاية"
 
     },
     "FORM" : {
@@ -29,6 +34,9 @@
         "click-here": "اضغط هنا",
         "register-now": "سجل الان",
         "create-your-account": "انشاء حسابك",
-        "repeat-password": "اعد كلمة السر"
+        "repeat-password": "اعد كلمة السر",
+        "submit-your-request": "تقدم بارسال طلبك",
+        "compelete-company-profile": "يتوجب  اكمال ملف الشركة ",
+        "compelete-profile": "اكمل الملف"
     }
 }

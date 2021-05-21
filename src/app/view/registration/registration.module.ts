@@ -6,6 +6,7 @@ import { LoginComponent } from './login/login.component';
 import { SignupComponent } from './signup/signup.component';
 import { TranslateModule } from '@ngx-translate/core';
 import { RegisterComponent } from './register/register.component';
+import { RouterModule } from "@angular/router";
 
 
 @NgModule({
@@ -18,7 +19,8 @@ import { RegisterComponent } from './register/register.component';
         BrowserModule,
         BasesModule,
         RegistrationRoutingModule,
-        TranslateModule
+        TranslateModule,
+        RouterModule
     ],
     exports: [LoginComponent,
         SignupComponent]
