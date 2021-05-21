@@ -18,6 +18,17 @@
     "FORM" : {
         "registr": "registr",
         "platform": "game platform",
-        "agree":"I have read the terms and conditions" 
+        "agree":"I have read the terms and conditions" ,
+        "login-to-your-account": "login to your account",
+        "enter": "enter",
+        "your-email": "your email",
+        "your-password":"your password",
+        "rember-me": "rember me",
+        "forgot-your-password":"forgot your password?",
+        "click-here": "click here",
+        "register-now": "register now",
+        "create-your-account": "create your account",
+        "repeat-password": "repeat password"
+
     }
 }

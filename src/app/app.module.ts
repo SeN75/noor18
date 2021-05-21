@@ -25,6 +25,8 @@ import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 import { SlickCarouselModule } from 'ngx-slick-carousel';
 import { LandingPageModule } from './view/landingpage/landingpage.module';
 import { BasesModule } from './view/components/bases.module';
+import { RegistrationComponent } from './view/registration/registration.component';
+import { RegistrationModule } from './view/registration/registration.module';
 
 // functions for translet service {
 export function HttpLoaderFactory(httpClient: HttpClient) {
@@ -35,12 +37,14 @@ export function HttpLoaderFactory(httpClient: HttpClient) {
     AppComponent,
     DashboardComponent,
     LandingpageComponent,
+    RegistrationComponent,
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     BrowserAnimationsModule,
     LandingPageModule,
+    RegistrationModule,
     HttpClientModule,
     MatToolbarModule,
     MatButtonModule,

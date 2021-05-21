@@ -19,6 +19,16 @@
     "FORM" : {
         "registr": "تسجيل",
         "platform": "منصة اللعبة",
-        "agree":"اقر بقرائة الشروط و الاحكام " 
+        "agree":"اقر بقرائة الشروط و الاحكام " ,
+        "login-to-your-account": "سجل دخولك لحسابك",
+        "enter": "ادخل",
+        "your-email": "بريدك الالكتروني",
+        "your-password":"كلمة مرورك",
+        "rember-me": "تذكرني",
+        "forgot-your-password":"نسيت كلمه مرورك؟",
+        "click-here": "اضغط هنا",
+        "register-now": "سجل الان",
+        "create-your-account": "انشاء حسابك",
+        "repeat-password": "اعد كلمة السر"
     }
 }
