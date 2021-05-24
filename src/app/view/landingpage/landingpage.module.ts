@@ -22,6 +22,7 @@ import { MatCheckboxModule } from '@angular/material/checkbox';
 import { ChampionshipSponsorshipComponent } from './championship-sponsorship/championship-sponsorship.component';
 import { RouterModule } from '@angular/router';
 import { OwnerRequestComponent } from './owner-request/owner-request.component';
+import { MatchOverviewComponent } from './match-overview/match-overview.component';
 
 @NgModule({
     declarations: [
@@ -29,7 +30,8 @@ import { OwnerRequestComponent } from './owner-request/owner-request.component';
         HomeComponent,
         TournamentsRegistrComponent,
         ChampionshipSponsorshipComponent,
-        OwnerRequestComponent
+        OwnerRequestComponent,
+        MatchOverviewComponent
     ],
     imports: [
         BrowserModule,

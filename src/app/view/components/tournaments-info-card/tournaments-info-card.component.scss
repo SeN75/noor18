@@ -1,18 +1,16 @@
-@import "../../../../scss/theme";
-
 .tournament-card {
   cursor: pointer;
   width: 100%;
-  background-color: var(--white);
-  border: 1px solid var(--gray);
+  background-color: #fefefe;
+  border: 1px solid #ebecec;
   border-radius: 20px;
   padding: 10px 20px 30px;
   margin: 20px 0 10px;
-  box-shadow: 0px 5px 10px var(--gray);
+  box-shadow: 0px 5px 10px #ebecec;
 }
 
 .tournament-card p {
-  color: var(--black);
+  color: #2b2a29;
   font-size: 22px;
 }
 .title {

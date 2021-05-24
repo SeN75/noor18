@@ -1,0 +1,23 @@
+<section class="loader">
+    <div class="overlay" [class.visble]="isLoading" [class.hidden]="!isLoading"></div>
+    <div class='body' [class.visble]="isLoading" [class.hidden]="!isLoading">
+        <span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+        </span>
+        <div class='base'>
+            <span></span>
+            <div class='face'></div>
+        </div>
+    </div>
+    <div class='longfazers' *ngIf="isLoading">
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+    </div>
+    <h1 [class.visble]="isLoading" [class.hidden]="!isLoading">Redirecting</h1>
+
+</section>

@@ -1,5 +1,6 @@
 import { Injectable } from '@angular/core';
 import { TranslateService } from '@ngx-translate/core';
+import { postsConfig, matchesConfig } from 'src/app/_common/slideCofig';
 
 type direction = 'rtl' | 'ltr';
 type language = 'ar' | 'en';
@@ -9,9 +10,10 @@ type language = 'ar' | 'en';
 export class LanguageService {
   public selected: language = 'ar';
   public dir: direction = 'rtl';
-
+  public postsConfig = postsConfig;
+  public matchesConfig = matchesConfig;
   constructor(private translate: TranslateService) {
-    this.ar();
+    this.en();
 
   }
 
@@ -26,9 +28,14 @@ export class LanguageService {
   ar() {
     this.setLanguage('ar');
     this.setDirection('rtl');
+    this.postsConfig.rtl = true;
+    this.matchesConfig.rtl = true;
   }
   en() {
     this.setLanguage('en')
     this.setDirection('ltr');
+    this.postsConfig.rtl = false;
+    this.matchesConfig.rtl = false;
+
   }
 }

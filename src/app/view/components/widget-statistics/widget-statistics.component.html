@@ -1,0 +1,79 @@
+<!-- Game Statistics -->
+
+<!-- Progress Stats Table -->
+<table class="progress-table progress-table--sm-space">
+    <tbody>
+        <tr>
+            <td class="progress-table__progress-label progress-table__progress-label--highlight">
+                {{data.team1.totalKill}}</td>
+            <td class="progress-table__progress-bar progress-table__progress-bar--first">
+                <div class="progress progress--lines">
+                    <div class="progress__bar" [style.width.%]="data.team1.totalKill" role="progressbar"
+                        aria-valuenow="56" aria-valuemin="0" aria-valuemax="100"></div>
+                </div>
+            </td>
+            <td class="progress-table__title">Total Kills</td>
+            <td class="progress-table__progress-bar progress-table__progress-bar--second">
+                <div class="progress progress--lines">
+                    <div class="progress__bar progress__bar--info" [style.width.%]="data.team2.totalKill"
+                        role="progressbar" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100"></div>
+                </div>
+            </td>
+            <td class="progress-table__progress-label">{{data.team2.totalKill}}</td>
+        </tr>
+        <tr>
+            <td class="progress-table__progress-label">{{data.team1.totalDeath}} </td>
+            <td class="progress-table__progress-bar progress-table__progress-bar--first">
+                <div class="progress progress--lines">
+                    <div class="progress__bar" [style.width.%]="data.team1.totalDeath" role="progressbar"
+                        aria-valuenow="23" aria-valuemin="0" aria-valuemax="100"></div>
+                </div>
+            </td>
+            <td class="progress-table__title">Total Deaths</td>
+            <td class="progress-table__progress-bar progress-table__progress-bar--second">
+                <div class="progress progress--lines">
+                    <div class="progress__bar progress__bar--info" [style.width.%]="data.team2.totalDeath"
+                        role="progressbar" aria-valuenow="38" aria-valuemin="0" aria-valuemax="100"></div>
+                </div>
+            </td>
+            <td class="progress-table__progress-label progress-table__progress-label--highlight">
+                {{data.team2.totalDeath}}</td>
+        </tr>
+        <tr>
+            <td class="progress-table__progress-label progress-table__progress-label--highlight">
+                {{data.team1.totalAssists}}</td>
+            <td class="progress-table__progress-bar progress-table__progress-bar--first">
+                <div class="progress progress--lines">
+                    <div class="progress__bar" [style.width.%]="data.team1.totalAssists" role="progressbar"
+                        aria-valuenow="14" aria-valuemin="0" aria-valuemax="100"></div>
+                </div>
+            </td>
+            <td class="progress-table__title">Total Assists</td>
+            <td class="progress-table__progress-bar progress-table__progress-bar--second">
+                <div class="progress progress--lines">
+                    <div class="progress__bar progress__bar--info" [style.width.%]="data.team2.totalAssists"
+                        role="progressbar" aria-valuenow="6" aria-valuemin="0" aria-valuemax="100"></div>
+                </div>
+            </td>
+            <td class="progress-table__progress-label">{{data.team2.totalAssists}}</td>
+        </tr>
+        <tr>
+            <td class="progress-table__progress-label progress-table__progress-label--highlight">
+                {{data.team1.totalDeath}}</td>
+            <td class="progress-table__progress-bar progress-table__progress-bar--first">
+                <div class="progress progress--lines">
+                    <div class="progress__bar" [style.width.%]="data.team1.totalDeath" role="progressbar"
+                        aria-valuenow="19" aria-valuemin="0" aria-valuemax="100"></div>
+                </div>
+            </td>
+            <td class="progress-table__title">Pentakills</td>
+            <td class="progress-table__progress-bar progress-table__progress-bar--second">
+                <div class="progress progress--lines">
+                    <div class="progress__bar progress__bar--info" [style.width.%]="data.team2.totalDeath"
+                        role="progressbar" aria-valuenow="12" aria-valuemin="0" aria-valuemax="100"></div>
+                </div>
+            </td>
+            <td class="progress-table__progress-label">{{data.team2.totalDeath}}</td>
+        </tr>
+    </tbody>
+</table><!-- Progress Stats Table / End -->

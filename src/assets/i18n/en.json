@@ -5,7 +5,8 @@
         "login": "login",
         "logout":"logout",
         "ar": "Arabic - ar",
-        "en": "English - en"
+        "en": "English - en",
+        "date": "date"
     },
     "TOURNAMENTS": {
         "tournaments": "tournaments",
@@ -39,5 +40,13 @@
         "compelete-company-profile": "You must complete the company file",
         "compelete-profile": "compelete profile"
 
+    },
+    "MATCH": {
+        "last-matches-stats": "last matches stats",
+        "kills": "kills",
+        "deaths": "deaths",
+        "assists": "assists",
+        "match-result": "match result",
+        "watch-replay": "watch-replay"
     }
 }

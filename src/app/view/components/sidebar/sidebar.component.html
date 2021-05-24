@@ -1,0 +1,19 @@
+<div id="mySidenav" class="sidenav" [style.width.px]="helperSrv.isSidebarOpen ? 250 : 0" style="z-index: 200;">
+    <img src="../../../../assets/image/logo.png">
+    <a class="closebtn" (click)="helperSrv.isSidebarOpen = false">&times;</a>
+    <a routerLink="/home" (click)="helperSrv.isSidebarOpen = false">{{ 'SETTINGS.home' | translate}}</a>
+    <a routerLink="/tournaments" (click)="helperSrv.isSidebarOpen = false"> {{ 'TOURNAMENTS.tournaments' |
+        translate}}</a>
+    <a routerLink="/sponsorship" (click)="helperSrv.isSidebarOpen = false">{{ 'TOURNAMENTS.sponsorship-of-tournaments' |
+        translate}}</a>
+    <a routerLink="/home" (click)="helperSrv.isSidebarOpen = false">{{'SETTINGS.your-account' | translate}}</a>
+    <a (click)="isLogin()">{{'SETTINGS.'+( user.isLogin ? 'logout' : 'login' ) | translate}}</a>
+    <nav class="social-medila">
+        <fa-icon matRipple [matRippleCentered]="center" [icon]="ICON.facebook"></fa-icon>
+        <fa-icon matRipple [matRippleCentered]="center" [icon]="ICON.twitter"></fa-icon>
+        <fa-icon matRipple [matRippleCentered]="center" [icon]="ICON.insta"></fa-icon>
+        <fa-icon matRipple [matRippleCentered]="center" [icon]="ICON.twitch"></fa-icon>
+    </nav>
+</div>
+<div class="overlay" style="z-index: 150;" (click)="helperSrv.isSidebarOpen = false"
+    [style.visibility]="(helperSrv.isSidebarOpen) ? 'visible': 'hidden'"></div>

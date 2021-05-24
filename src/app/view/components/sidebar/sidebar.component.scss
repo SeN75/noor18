@@ -1,0 +1,108 @@
+.sidenav {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1000;
+  top: 0;
+  left: 0;
+  background-color: #2b2a29;
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 60px;
+}
+.sidenav img {
+  display: block;
+  margin: 0px auto 10px;
+  width: 90px;
+  height: auto;
+}
+.sidenav a {
+  padding: 16px 30px;
+  text-decoration: none;
+  font-size: 11px;
+  font-style: italic;
+  font-weight: 400;
+  line-height: 1.5em;
+
+  color: #fefefe;
+  display: block;
+  transition: 0.3s;
+  border-bottom: 1px solid #8b8b8b;
+}
+.sidenav a:nth-child(3) {
+  margin-top: 20px;
+  border-top: 1px solid #d7b56d;
+}
+// a {
+//     padding: 16px 30px;
+//     font-size: 11px;
+//     text-align: left;
+//     border-right: 0 solid;
+//     background-color: transparent;
+//     color: #fff;
+//     line-height: 1.5em;
+//     border-bottom: 1px solid #8b8b8b;
+//     position: static;
+// }
+.sidenav .closebtn {
+  padding: 0;
+  border-bottom: none;
+}
+.sidenav a:hover {
+  color: #d7b56d;
+  border-bottom-color: #d7b56d;
+}
+
+.sidenav .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+
+@media screen and (max-height: 450px) {
+  .sidenav {
+    padding-top: 15px;
+  }
+  .sidenav a {
+    font-size: 18px;
+  }
+}
+
+// .sidenav .divid {
+//   margin: auto;
+//   width: 80%;
+//   height: 2px;
+//   background-color: #d7b56d;
+// }
+.overlay {
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  z-index: 999;
+  background-color: rgba(0, 0, 0, 0.4);
+  transition: 300em;
+  visibility: visible;
+}
+
+.social-medila mat-icon,
+.social-medila fa-icon {
+  cursor: pointer;
+  padding: 0 14px;
+  font-size: 15px;
+  opacity: 0.8;
+}
+.social-medila mat-icon:hover,
+.social-medila fa-icon:hover {
+  color: #d7b56d;
+  opacity: 1;
+}
+
+.social-medila {
+  display: flex;
+  margin-top: 20px;
+  justify-content: center;
+}

@@ -1,26 +1,24 @@
-@import "../../../../scss/theme";
-
 section {
-  background-color: var(--black);
+  background-color: #2b2a29;
   padding: 20px;
-  color: var(--white);
+  color: #fefefe;
 }
 .social-medila {
-  background-color: var(--black);
+  background-color: #2b2a29;
 }
 .social-medila div {
   padding-top: 20px;
   display: flex;
   justify-content: space-around;
-  color: var(--white);
-  background-color: var(--black);
-  border-top: 1px solid var(--white);
+  color: #fefefe;
+  background-color: #2b2a29;
+  border-top: 1px solid #fefefe;
   font-size: 20px;
 }
 .social-medila fa-icon {
   margin: 0 10px;
   font-size: 30px;
-  color: var(--primary);
+  color: #d7b56d;
 }
 .social-medila span {
   flex-wrap: wrap;

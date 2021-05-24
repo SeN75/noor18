@@ -1,0 +1,72 @@
+<div class="row">
+    <!-- Last Matches Stats -->
+    <div class="card card--has-table">
+        <div class="card__header">
+            <h4>{{'MATCH.last-matches-stats' | translate}}</h4>
+        </div>
+        <div class="card__content">
+            <div class="table-responsive">
+                <table class="table table-hover team-result">
+                    <thead>
+                        <th class="team-result__date">{{'SETTINGS.date' | translate}}</th>
+                        <th class="team-result__vs">{{'MATCH.match-result' | translate}}</th>
+                        <th class="team-result__kills">{{'MATCH.kills' | translate}}</th>
+                        <th class="team-result__deaths">{{'MATCH.deaths' | translate}}</th>
+                        <th class="team-result__assists">{{'MATCH.assists' | translate}}</th>
+                        <th class="team-result__replay"></th>
+                    </thead>
+                    <tbody>
+                        <tr *ngFor="let match of matches">
+                            <td class="team-result__date">{{match.date | date}}</td>
+                            <td class="team-result__outcome">
+                                <div class="team-result__teams-wrapper">
+                                    <!-- Team #1 -->
+                                    <div class="team-meta team-meta--first">
+                                        <figure class="team-meta__logo"><img src="{{match.team1.logo}}" alt="">
+                                        </figure>
+                                        <div class="team-meta__info">
+                                            <h6 class="team-meta__name">{{match.team1.name}}</h6><span
+                                                class="team-meta__place">{{match.team1.place}}</span>
+                                        </div>
+                                    </div><!-- Team #1 / End -->
+                                    <div class="team-result__teams-score"><span class="team-result__score "
+                                            [class.team-result__score--win]="match.isTeam1Win">{{match.team1.score}}</span>
+                                        - <span class="team-result__score"
+                                            [class.team-result__score--win]="!match.isTeam1Win">{{match.team2.score}}</span>
+                                    </div>
+                                    <!-- Team #2 -->
+                                    <div class="team-meta team-meta--second">
+                                        <figure class="team-meta__logo"><img
+                                                src="assets/images/samples/logos/icarus_wings_shield.png" alt="">
+                                        </figure>
+                                        <div class="team-meta__info">
+                                            <h6 class="team-meta__name">{{match.team2.name}}</h6><span
+                                                class="team-meta__place">{{match.team2.name}}</span>
+                                        </div>
+                                    </div><!-- Team #2 / End -->
+                                </div>
+                            </td>
+                            <td class="team-result__kills"><span class="team-color--1">{{match.team1.totalKill}}</span>
+                                /
+                                <span class="team-color--2">{{match.team2.totalKill}}</span>
+                            </td>
+                            <td class="team-result__deaths"><span
+                                    class="team-color--1">{{match.team1.totalDeath}}</span> /
+                                <span class="team-color--2">{{match.team2.totalDeath}}</span>
+                            </td>
+                            <td class="team-result__assists"><span
+                                    class="team-color--1">{{match.team1.totalAssists}}</span>
+                                / <span class="team-color--2">{{match.team2.totalAssists}}</span></td>
+                            <td class="team-result__replay"><a href="#"
+                                    class="btn btn-xs btn-default-alt btn-single-icon btn-circle" data-toggle="tooltip"
+                                    data-placement="top" title="{{'MATCH.watch.replay' | translate}}">
+                                    <fa-icon [icon]="icon.play"></fa-icon>
+                                </a></td>
+                        </tr>
+
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div><!-- Last Matches Stats / End -->
+</div>

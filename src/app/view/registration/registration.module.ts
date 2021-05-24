@@ -7,6 +7,7 @@ import { SignupComponent } from './signup/signup.component';
 import { TranslateModule } from '@ngx-translate/core';
 import { RegisterComponent } from './register/register.component';
 import { RouterModule } from "@angular/router";
+import { FormsModule, ReactiveFormsModule } from "@angular/forms";
 
 
 @NgModule({
@@ -20,7 +21,9 @@ import { RouterModule } from "@angular/router";
         BasesModule,
         RegistrationRoutingModule,
         TranslateModule,
-        RouterModule
+        RouterModule,
+        ReactiveFormsModule,
+        FormsModule
     ],
     exports: [LoginComponent,
         SignupComponent]

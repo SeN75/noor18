@@ -1,0 +1,38 @@
+.vedio-warpper {
+  border: 1px solid #ebecec;
+  border-radius: 5px;
+}
+
+.vedio-warpper .vedio-player {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #ebecec;
+  width: 100%;
+  height: 250px;
+}
+
+.vedio-warpper .vedio-player .play {
+  width: 38px;
+  height: 38px;
+  border-radius: 25px;
+  background-color: #d7b56d;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fefefe;
+}
+
+.vedio-warpper .vedio-player .play:hover {
+  background-color: #2b2a29;
+}
+
+.vedio-warpper .vedio-content {
+  padding: 1em;
+  background-color: #fefefe;
+}
+
+.vedio-content p {
+  color: var(--secondary);
+}

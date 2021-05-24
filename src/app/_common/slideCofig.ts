@@ -1,7 +1,7 @@
 
 
 export const matchesConfig = {
-    "slidesToShow": 3, "slidesToScroll": 1, "rtl": false, "autoplay": true, "responsive": [
+    "slidesToShow": 3, "arrows": false, "slidesToScroll": 1, "rtl": false, "autoplay": true, "responsive": [
         {
             "breakpoint": 1024, "settings": {
                 "slidesToShow": 2,
@@ -17,7 +17,7 @@ export const matchesConfig = {
     ]
 };
 export const postsConfig = {
-    "slidesToShow": 4, "margin": 5, "rtl": false, "slidesToScroll": 1, "autoplay": true, "responsive": [
+    "slidesToShow": 4, "margin": 5, "arrows": false, "rtl": false, "slidesToScroll": 1, "autoplay": true, "responsive": [
         {
             "breakpoint": 1024, "settings": {
                 "slidesToShow": 4,
@@ -38,3 +38,24 @@ export const postsConfig = {
         }
     ]
 };
+
+export const adsConifg = {
+
+
+    "slidesToShow": 1,
+    "slidesToScroll": 1,
+    "arrows": false,
+    "fade": true,
+    "autoplay": true,
+    "autoplaySpeed": 5000,
+    "rows": 0,
+    "responsive": [
+        {
+            "breakpoint": 992,
+            "settings": {
+                "fade": true,
+
+            }
+        }
+    ]
+}

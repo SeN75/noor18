@@ -1,4 +1,3 @@
-@import "../../../../scss/theme";
 .social-medila mat-icon,
 .social-medila fa-icon {
   cursor: pointer;
@@ -8,29 +7,29 @@
 }
 .social-medila mat-icon:hover,
 .social-medila fa-icon:hover {
-  color: var(--primary);
+  color: #d7b56d;
   opacity: 1;
 }
 .spacer {
   flex: 1 1 auto;
 }
 .header-navbar {
-  background-color: var(--black);
-  color: var(--white);
+  background-color: #2b2a29;
+  color: #fefefe;
 }
 
 .account span {
   font-size: 14px;
 }
 .space {
-  color: var(--primary);
+  color: #d7b56d;
   margin: 0 10px;
 }
 
 .nav button {
   font-size: 20px;
   margin: 0 10px;
-  color: var(--primary);
+  color: #d7b56d;
 }
 
 .search {
@@ -39,7 +38,7 @@
   align-items: center;
   flex-wrap: wrap;
   border: none;
-  background-color: var(--white);
+  background-color: #fefefe;
   border-radius: 25px;
   width: 320px;
   height: 50px;
@@ -65,8 +64,8 @@
   top: 0;
   left: 0;
   width: 240px;
-  background-color: var(--black);
-  color: var(--white);
+  background-color: #2b2a29;
+  color: #fefefe;
   height: 100%;
   z-index: 100;
 }

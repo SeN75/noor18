@@ -17,6 +17,14 @@ import { MatRippleModule } from '@angular/material/core';
 import { MatSidenavModule } from '@angular/material/sidenav';
 import { TournamentsInfoCardComponent } from './tournaments-info-card/tournaments-info-card.component';
 import { RouterModule } from "@angular/router";
+import { SplitScreenComponent } from './split-screen/split-screen.component';
+import { LatestMatchesStatusComponent } from './latest-matches-status/latest-matches-status.component';
+import { WidgetGameComponent } from './widget-game/widget-game.component';
+import { WidgetStandingComponent } from './widget-standing/widget-standing.component';
+import { WidgetStatisticsComponent } from './widget-statistics/widget-statistics.component';
+import { SlickCarouselModule } from "ngx-slick-carousel";
+import { SidebarComponent } from './sidebar/sidebar.component';
+import { LoaderComponent } from './loader/loader.component';
 @NgModule({
     declarations: [
         BaseComponent,
@@ -24,7 +32,15 @@ import { RouterModule } from "@angular/router";
         FooterComponent,
         MatchCardComponent,
         PostAdsComponent,
-        TournamentsInfoCardComponent],
+        TournamentsInfoCardComponent,
+        SplitScreenComponent,
+        LatestMatchesStatusComponent,
+        WidgetGameComponent,
+        WidgetStandingComponent,
+        WidgetStatisticsComponent,
+        SidebarComponent,
+        LoaderComponent
+    ],
     imports: [
         BrowserModule,
         RouterModule,
@@ -36,6 +52,8 @@ import { RouterModule } from "@angular/router";
         MatMenuModule,
         MatSidenavModule,
         MatIconModule,
+        SlickCarouselModule,
+
     ],
     exports: [
         BaseComponent,
@@ -43,7 +61,14 @@ import { RouterModule } from "@angular/router";
         FooterComponent,
         MatchCardComponent,
         PostAdsComponent,
-        TournamentsInfoCardComponent
+        TournamentsInfoCardComponent,
+        SplitScreenComponent,
+        LatestMatchesStatusComponent,
+        WidgetGameComponent,
+        WidgetStandingComponent,
+        WidgetStatisticsComponent,
+        SidebarComponent,
+        LoaderComponent
     ]
 })
 

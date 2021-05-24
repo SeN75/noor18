@@ -1,19 +1,81 @@
-<div class="row">
-    <h1 class="title">{{'TOURNAMENTS.now-playing' | translate}}</h1>
-    <ngx-slick-carousel class="carousel row" #slickModal="slick-carousel" [config]="matchesConfig"
-        (init)="slickInit($event)" (breakpoint)="breakpoint($event)" (afterChange)="afterChange($event)"
-        (beforeChange)="beforeChange($event)">
-        <match-card ngxSlickItem *ngFor="let match of matchs;" [match]="match" class="col-12 col-sm-6 col-md-4">
-        </match-card>
+<section class="hero">
+    <div class="ads-baner">
+        <div class="ads">
+            <ngx-slick-carousel class="carousel row" #slickModal="slick-carousel" [config]="adsConifg"
+                (init)="slickInit($event)" (breakpoint)="breakpoint($event)" (afterChange)="afterChange($event)"
+                (beforeChange)="beforeChange($event)">
 
-    </ngx-slick-carousel>
+                <div class="" ngxSlickItem>
+                    <h1>join</h1>
+                    <h2>to us</h2>
+                    <p>Ad id commodo ex sit Lorem non occaecat. Laborum incididunt cupidatat aute nisi magna culpa
+                        eiusmod ea
+                        amet est Lorem exercitation et et. Nisi non minim quis nulla incididunt ea. Tempor incididunt
+                        officia
+                        tempor anim duis qui eu ullamco. Esse ex magna esse elit velit nulla sunt officia amet dolor
+                        tempor
+                        aliquip.
 
-    <h1 class="title">{{'TOURNAMENTS.upcoming-events' | translate}}</h1>
-    <ngx-slick-carousel class="carousel row" #slickModal="slick-carousel" [config]="postsConfig"
-        (init)="slickInit($event)" (breakpoint)="breakpoint($event)" (afterChange)="afterChange($event)"
-        (beforeChange)="beforeChange($event)">
-        <post-ads ngxSlickItem *ngFor="let post of posts;" [post]="post" class="col-12 col-sm-6 col-md-4">
-        </post-ads>
+                    </p>
+                    <button class="btn btn-primary btn-block btn-large">join</button>
+                </div>
+                <div class="" ngxSlickItem>
+                    <h1>join</h1>
+                    <h2>to us</h2>
+                    <p>Ad id commodo ex sit Lorem non occaecat. Laborum incididunt cupidatat aute nisi magna culpa
+                        eiusmod ea
+                        amet est Lorem exercitation et et. Nisi non minim quis nulla incididunt ea. Tempor incididunt
+                        officia
+                        tempor anim duis qui eu ullamco. Esse ex magna esse elit velit nulla sunt officia amet dolor
+                        tempor
+                        aliquip.
 
-    </ngx-slick-carousel>
-</div>
+                    </p>
+                    <button class="btn btn-primary btn-block btn-large">join</button>
+                </div>
+
+            </ngx-slick-carousel>
+        </div>
+    </div>
+    <div class="main-event">
+        <widget-game [data]="matches[0]"></widget-game>
+    </div>
+</section>
+<section class="container-fluid site-content" [dir]="lang.dir">
+
+    <div class="row justify-content-center">
+        <div class="col-11 col-md-10 col-lg-9">
+            <div class="row">
+
+
+                <!-- <div class="col-12 col-md-8">
+
+            <latest-matches-status [matches]="matches"></latest-matches-status>
+            <latest-matches-status [matches]="matches"></latest-matches-status>
+        </div>
+        <div class="col-12 col-md-4">
+            <widget-standing></widget-standing>
+        </div> -->
+                <h1 class="title">{{'TOURNAMENTS.now-playing' | translate}}</h1>
+                <ngx-slick-carousel class="carousel row" #slickModal="slick-carousel" [config]="lang.matchesConfig"
+                    (init)="slickInit($event)" (breakpoint)="breakpoint($event)" (afterChange)="afterChange($event)"
+                    (beforeChange)="beforeChange($event)">
+                    <match-card ngxSlickItem *ngFor="let match of matchs;" [match]="match"
+                        class="col-12 col-sm-6 col-md-4">
+                    </match-card>
+
+
+                </ngx-slick-carousel>
+
+                <h1 class="title">{{'TOURNAMENTS.upcoming-events' | translate}}</h1>
+                <ngx-slick-carousel class="carousel row" #slickModal="slick-carousel" [config]="lang.postsConfig"
+                    (init)="slickInit($event)" (breakpoint)="breakpoint($event)" (afterChange)="afterChange($event)"
+                    (beforeChange)="beforeChange($event)">
+                    <post-ads ngxSlickItem *ngFor="let post of posts;" [post]="post" class="col-12 col-sm-6 col-md-4">
+                    </post-ads>
+
+                </ngx-slick-carousel>
+            </div>
+        </div>
+    </div>
+</section>

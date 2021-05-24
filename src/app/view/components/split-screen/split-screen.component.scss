@@ -1,0 +1,79 @@
+section.split {
+  position: relative;
+  height: 90vh;
+  width: 100vw;
+  display: flex;
+  flex-wrap: wrap;
+  overflow: auto;
+  flex: 1;
+}
+section .screen {
+  position: relative;
+  flex-grow: 1;
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: 0.5s;
+  overflow: hidden;
+}
+section .screen:hover {
+  flex-grow: 10;
+}
+section .screen:nth-child(1) {
+  background: #2b2a29;
+}
+section .screen:nth-child(2) {
+  background: #d7b56d;
+}
+section .screen .card {
+  text-align: center;
+  transition: 0.5s;
+}
+section .screen .card .imgBox {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  overflow: hidden;
+  margin: 0 auto;
+}
+section .screen .card .imgBox img {
+  max-width: 100%;
+}
+section .screen .card a {
+  padding: 10px 20px;
+  background: #262626;
+  color: #fff;
+  text-decoration: none;
+}
+.content {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  padding: 100px;
+  background: inherit;
+  transition: 0.5s;
+  opacity: 0;
+  visibility: hidden;
+}
+// .content2 {
+//   background-color: #2b2a29 !important;
+// }
+
+section .screen:hover .content,
+.content:hover {
+  opacity: 1;
+  visibility: visible;
+}
+
+.big-title {
+  font-size: 5em;
+  margin-bottom: 1.6em;
+}
+@media screen and (max-width: 700px) {
+  .split {
+    flex-direction: column;
+  }
+}

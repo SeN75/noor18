@@ -1,0 +1,55 @@
+.hero {
+  display: flex;
+  flex-wrap: wrap;
+  flex: 5;
+  width: 100vw;
+  height: 60vh;
+  flex-wrap: wrap;
+}
+.hero .ads-baner {
+  flex-grow: 3.4;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 60px;
+  background-color: #2b2a29;
+}
+.hero .main-event {
+  flex-grow: 1.6;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 60px;
+  background-color: #d7b56d;
+}
+
+.hero .ads-baner .ads {
+  width: 30vw;
+}
+
+.hero .ads-baner .ads h1 {
+  font-weight: 900;
+  color: #fefefe;
+  margin-bottom: 0.5em;
+  font-size: 50px;
+  font-style: italic;
+}
+.hero .ads-baner .ads h2 {
+  font-weight: 700;
+  color: #d7b56d;
+  font-size: 30px;
+}
+
+@media screen and (max-width: 800px) {
+  .hero {
+    height: 200vh;
+    flex-direction: column;
+  }
+}
+
+.site-content {
+  background-image: url("../../../../assets/images/esports/bg-3.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}

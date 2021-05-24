@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
-import { matchs, posts } from 'src/app/_common/globle';
-import { matchesConfig, postsConfig } from 'src/app/_common/slideCofig';
+import { matchFinished, matchs, posts } from 'src/app/_common/globle';
+import { matchesConfig, postsConfig, adsConifg } from 'src/app/_common/slideCofig';
 import { LanguageService } from 'src/app/_services/language.service';
 
 @Component({
@@ -11,16 +11,15 @@ import { LanguageService } from 'src/app/_services/language.service';
 export class HomeComponent implements OnInit {
 
   matchs = matchs;
+  matches = matchFinished;
   posts = posts;
   matchesConfig = matchesConfig;
   postsConfig = postsConfig;
 
+  adsConifg = adsConifg;
   constructor(public lang: LanguageService) { }
   ngOnInit(): void {
-    if (this.lang.dir == 'rtl') {
-      postsConfig.rtl = true;
-      matchesConfig.rtl = true;
-    }
+
   }
   slickInit(e: any) {
     console.log('slick initialized');

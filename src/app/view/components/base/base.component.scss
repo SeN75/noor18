@@ -2,3 +2,12 @@ section {
   height: 65vh;
   overflow: auto;
 }
+
+.div1,
+.div2 {
+  width: 100px;
+  height: 100px;
+  background-color: aqua;
+  margin: 10px;
+  visibility: visible;
+}

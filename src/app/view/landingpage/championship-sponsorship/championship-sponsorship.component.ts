@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { LanguageService } from 'src/app/_services/language.service';
 
 @Component({
   selector: 'app-championship-sponsorship',
@@ -7,7 +8,7 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ChampionshipSponsorshipComponent implements OnInit {
 
-  constructor() { }
+  constructor(public lang: LanguageService) { }
 
   ngOnInit(): void {
   }

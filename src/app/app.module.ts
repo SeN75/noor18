@@ -16,7 +16,7 @@ import { MatSidenavModule } from '@angular/material/sidenav';
 
 import { TranslateModule, TranslateLoader } from '@ngx-translate/core';
 import { TranslateHttpLoader } from '@ngx-translate/http-loader';
-import { HttpClient, HttpClientModule } from '@angular/common/http';
+import { HttpClient, HttpClientModule, HTTP_INTERCEPTORS } from '@angular/common/http';
 import { DashboardComponent } from './view/dashboard/dashboard.component';
 import { LandingpageComponent } from './view/landingpage/landingpage.component';
 
@@ -27,6 +27,8 @@ import { LandingPageModule } from './view/landingpage/landingpage.module';
 import { BasesModule } from './view/components/bases.module';
 import { RegistrationComponent } from './view/registration/registration.component';
 import { RegistrationModule } from './view/registration/registration.module';
+import { DashboardModule } from './view/dashboard/dashboard.module';
+import { Interceptor } from './_helper/interceptor';
 
 // functions for translet service {
 export function HttpLoaderFactory(httpClient: HttpClient) {
@@ -45,6 +47,7 @@ export function HttpLoaderFactory(httpClient: HttpClient) {
     BrowserAnimationsModule,
     LandingPageModule,
     RegistrationModule,
+    DashboardModule,
     HttpClientModule,
     MatToolbarModule,
     MatButtonModule,
@@ -64,7 +67,13 @@ export function HttpLoaderFactory(httpClient: HttpClient) {
     }),
     FontAwesomeModule
   ],
-  providers: [],
+  providers: [
+    {
+      provide: HTTP_INTERCEPTORS,
+      useClass: Interceptor,
+      multi: true
+    },
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

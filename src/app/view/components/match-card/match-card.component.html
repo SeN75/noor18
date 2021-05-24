@@ -2,14 +2,14 @@
     <h2 class="text-center league">{{match.league}}</h2>
     <div class="teams">
         <div class="team1">
-            <img class="team-logo" src="../../../../assets/image/{{match.teams[0].logo}}">
+            <img class="team-logo" src="{{match.teams[0].logo}}">
             <p class="team-name">{{match.teams[0].name}}</p>
         </div>
         <div class="score">
             {{match.status == 'finished' ? match.teams[0].score + ' - ' +match.teams[1].score: 'vs' }}
         </div>
         <div class="team2">
-            <img class="team-logo" src="../../../../assets/image/{{match.teams[1].logo}}">
+            <img class="team-logo" src="{{match.teams[1].logo}}">
             <p class="team-name">{{match.teams[1].name}}</p>
         </div>
     </div>

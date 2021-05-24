@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { FormBuilder, FormGroup, Validators } from '@angular/forms';
+import { RegistraionService } from 'src/app/_services/registraion.service';
 
 @Component({
   selector: 'login',
@@ -6,10 +8,21 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./login.component.scss']
 })
 export class LoginComponent implements OnInit {
-
-  constructor() { }
+  loginForm: FormGroup = this.formBuilder.group({
+    email: ['', [Validators.required, Validators.email]],
+    password: ['', Validators.required]
+  });
+  constructor(private registrationSrv: RegistraionService, private formBuilder: FormBuilder) { }
 
   ngOnInit(): void {
   }
-
+  login() {
+    if (this.loginForm.invalid) {
+      return console.log(this.loginForm)
+    }
+    else {
+      console.log('login');
+      this.registrationSrv.login(this.loginForm.value)
+    }
+  }
 }

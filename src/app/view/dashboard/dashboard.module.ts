@@ -2,6 +2,7 @@ import { NgModule } from "@angular/core";
 import { BrowserModule } from "@angular/platform-browser";
 import { BasesModule } from "../components/bases.module";
 import { DashboardRoutingModule } from "./dashboard.routing.module";
+
 import { UserDashboradComponent } from './user-dashborad/user-dashborad.component';
 import { DefultPageComponent } from './user-dashborad/defult-page/defult-page.component';
 import { UserProfileComponent } from './user-dashborad/user-profile/user-profile.component';
@@ -16,25 +17,25 @@ import { CurrentTeamComponent } from './user-dashborad/teams/current-team/curren
 
 
 @NgModule({
-    imports: [
-        BrowserModule,
-        BasesModule,
-        DashboardRoutingModule
-    ],
-    exports: [],
-    declarations: [
-      UserDashboradComponent,
-      DefultPageComponent,
-      UserProfileComponent,
-      LinkingPlatformsComponent,
-      TeamsComponent,
-      PersonalInfoComponent,
-      PlayerInfoComponent,
-      OrganizerInfoComponent,
-      CreateNewTeamComponent,
-      JoingToTeamComponent,
-      CurrentTeamComponent
-    ]
+  imports: [
+    BrowserModule,
+    BasesModule,
+    DashboardRoutingModule
+  ],
+  exports: [],
+  declarations: [
+    UserDashboradComponent,
+    DefultPageComponent,
+    UserProfileComponent,
+    LinkingPlatformsComponent,
+    TeamsComponent,
+    PersonalInfoComponent,
+    PlayerInfoComponent,
+    OrganizerInfoComponent,
+    CreateNewTeamComponent,
+    JoingToTeamComponent,
+    CurrentTeamComponent
+  ]
 })
 
 export class DashboardModule { }

@@ -4,12 +4,13 @@
     </div>
     <div class="card__content">
         <!-- Login Form -->
-        <form>
+        <form [formGroup]="loginForm">
             <div class="form-group"><label for="login-name">{{'FORM.your-email' | translate}}</label> <input
-                    type="email" name="login-name" id="login-name" class="form-control"
+                    type="email" name="login-name" id="login-name" class="form-control" formControlName="email"
                     placeholder="{{'FORM.enter' | translate}} {{'FORM.your-email' | translate}}..."></div>
             <div class="form-group"><label for="login-password">{{'FORM.your-password' | translate}}</label> <input
-                    type="password" name="login-password" id="login-password" class="form-control"
+                    type="password" formControlName="password" name="login-password" id="login-password"
+                    class="form-control"
                     placeholder="{{'FORM.enter' | translate}} {{'FORM.your-email' | translate}}...">
             </div>
             <div class="form-group form-group--password-forgot"><label class="checkbox checkbox-inline"><input
@@ -17,7 +18,7 @@
                     translate}} <span class="checkbox-indicator"></span></label> <span
                     class="password-reminder">{{'FORM.forgot-your-password' | translate}}
                     <a href=".">{{'FORM.click-here' | translate}}</a></span></div>
-            <div class="form-group form-group--sm"><button [routerLink]="['/owner-reques']"
+            <div class="form-group form-group--sm"><button (click)="login()"
                     class="btn btn-primary-inverse btn-lg btn-block">{{'SETTINGS.login' | translate}}</button>
             </div>
             <!-- <div class="row">

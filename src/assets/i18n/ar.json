@@ -5,7 +5,9 @@
         "login": "تسجيل دخول",
         "logout":"تسجيل خروج",
         "ar": "العربية - ar",
-        "en": "الانجليزية - en"
+        "en": "الانجليزية - en",
+        "date": "تاريخ",
+        "home": "الرئيسية"
     },
     "TOURNAMENTS": {
         "tournaments": "البطولات",
@@ -38,5 +40,13 @@
         "submit-your-request": "تقدم بارسال طلبك",
         "compelete-company-profile": "يتوجب  اكمال ملف الشركة ",
         "compelete-profile": "اكمل الملف"
+    },
+    "MATCH": {
+        "last-matches-stats": "احصائيات اخر المباريات",
+        "kills": "القتل",
+        "deaths": "الموت",
+        "assists": "المساعدات",
+        "match-result": "نتيجة المبارة",
+        "watch-replay": "مشاهده الاعاده"
     }
 }

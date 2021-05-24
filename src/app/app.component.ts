@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { LanguageService } from './_services/language.service';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-root',
@@ -8,5 +9,6 @@ import { LanguageService } from './_services/language.service';
 })
 export class AppComponent {
   title = 'noor18';
-  constructor(private lang: LanguageService) { }
+  constructor(private lang: LanguageService, private router: Router) {
+  }
 }
