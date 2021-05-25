@@ -6,6 +6,7 @@ export interface Login {
 
 export interface Tournament {
     id: number;
+    guidId?: string;
     name: string;
     description: string;
     permalink: string;
@@ -29,7 +30,7 @@ export interface Tournament {
     createdDate?: string;
     lastModifyDate?: string;
     deletedBy?: number;
-    isDeleted?: number;
+    isDeleted?: boolean;
     gameNavigation?: any;
 
 }
@@ -44,7 +45,7 @@ export interface TournamentGroup {
     createdBy?: number;
     lastModifyDate?: string;
     deletedBy?: number;
-    isDeleted?: number;
+    isDeleted?: boolean;
 }
 
 export interface TournamentMatch {
@@ -57,7 +58,7 @@ export interface TournamentMatch {
     createdBy?: number;
     lastModifyDate?: string;
     deletedBy?: number;
-    isDeleted?: number;
+    isDeleted?: boolean;
 }
 
 
@@ -78,7 +79,7 @@ export interface TournamentMatchPlayer {
     createdBy?: number;
     lastModifyDate?: string;
     deletedBy?: number;
-    isDeleted?: number;
+    isDeleted?: boolean;
 }
 
 
@@ -151,8 +152,8 @@ export interface TournamentRuleTiebreaker {
     lastModifyDate?: string;
     deletedBy?: number;
     isDeleted?: boolean;
-    tiebreakerNavigation: any;
-    tournamentRuleNavigation: any;
+    tiebreakerNavigation?: any;
+    tournamentRuleNavigation?: any;
 
 }
 
@@ -168,5 +169,5 @@ export interface TournamentRuleWinnerOrder {
     lastModifyDate: string;
     deletedBy?: number;
     isDeleted?: boolean;
-    tournamentRuleNavigation: any;
+    tournamentRuleNavigation?: any;
 }

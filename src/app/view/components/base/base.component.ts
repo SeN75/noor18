@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { matchFinished, matchs, posts } from 'src/app/_common/globle';
 import { LanguageService } from 'src/app/_services/language.service';
+import { TournamentService } from 'src/app/_services/tournament.service';
 import { tournaments } from './../../../_common/globle';
 
 @Component({
@@ -14,7 +15,7 @@ export class BaseComponent implements OnInit {
   tournaments = tournaments;
   matchFinished = matchFinished;
   isLoading = true;
-  constructor(public lang: LanguageService) {
+  constructor(public lang: LanguageService, private tournamentSrv: TournamentService) {
 
     setTimeout(() => { this.isLoading = false }, 3000)
   }

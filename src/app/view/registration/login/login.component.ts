@@ -9,8 +9,8 @@ import { RegistraionService } from 'src/app/_services/registraion.service';
 })
 export class LoginComponent implements OnInit {
   loginForm: FormGroup = this.formBuilder.group({
-    email: ['', [Validators.required, Validators.email]],
-    password: ['', Validators.required]
+    email: ['dev.alqarni@gmail.com', [Validators.required, Validators.email]],
+    password: ['123456', Validators.required]
   });
   constructor(private registrationSrv: RegistraionService, private formBuilder: FormBuilder) { }
 

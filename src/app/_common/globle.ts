@@ -1,5 +1,6 @@
 import { faFacebook, faInstagram, faTwitch, faTwitter } from "@fortawesome/free-brands-svg-icons";
 import { faPlay, faStar } from "@fortawesome/free-solid-svg-icons";
+import { Tournament, TournamentRuleTiebreaker, TournamentRuleWinnerOrder } from "./types";
 
 export const ICON = {
     facebook: faFacebook,
@@ -114,3 +115,160 @@ export const matchFinished = [
         isTeam1Win: true
     },
 ]
+
+
+
+
+export const tournamentTest: Tournament = {
+    "id": 0,
+    "guidId": "string",
+    "name": "string",
+    "description": "string",
+    "permalink": "string",
+    "banner": "string",
+    "logo": "string",
+    "gameId": 0,
+    "numberOfParticipants": 0,
+    "isTeam": false,
+    "startDate": "2021-05-25T00:13:56.068Z",
+    "endDate": "2021-05-25T00:13:56.068Z",
+    "registrationBasedOnDates": false,
+    "startRegistrationDate": "2021-05-25T00:13:56.068Z",
+    "endRegistrationDate": "2021-05-25T00:13:56.068Z",
+    "manuallyParticipantAccreditation": false,
+    "registrationMessage": "string",
+    "approvalMessage": "string",
+    "rejectMessage": "string",
+    "rule": "string",
+    "prizes": "string",
+    "createdBy": 0,
+    "createdDate": "2021-05-25T00:13:56.068Z",
+    "lastModifyDate": "2021-05-25T00:13:56.068Z",
+    "deletedBy": 0,
+    "isDeleted": false,
+}
+
+
+export const tournmaentGroupTest = {
+    "id": 0,
+    "guidId": "string",
+    "tournamentId": 0,
+    "roundId": 0,
+    "name": "string",
+    "createdBy": 0,
+    "createdDate": "2021-05-25T00:38:23.538Z",
+    "lastModifyDate": "2021-05-25T00:38:23.538Z",
+    "deletedBy": 0,
+    "isDeleted": false,
+}
+
+export const tournmaentMatchTest = {
+    "id": 0,
+    "guidId": "string",
+    "tournamentId": 0,
+    "tournamentGroupId": 0,
+    "tournamentRoundId": 0,
+    "playerIdWinner": 0,
+    "dateTimeOfMatch": "2021-05-25T01:05:16.313Z",
+    "createdBy": 0,
+    "createdDate": "2021-05-25T01:05:16.313Z",
+    "lastModifyDate": "2021-05-25T01:05:16.313Z",
+    "deletedBy": 0,
+    "isDeleted": false,
+}
+export const tournmaentMatchPlayerTest = {
+    "id": 0,
+    "guidId": "string",
+    "tournamentMatchId": 0,
+    "playerId": 0,
+    "isWin": false,
+    "isDraw": false,
+    "isLoss": false,
+    "forfeit": 0,
+    "scoreFor": 0,
+    "scoreAgainst": 0,
+    "scoreDifference": 0,
+    "points": 0,
+    "score": 0,
+    "createdBy": 0,
+    "createdDate": "2021-05-25T01:03:23.664Z",
+    "lastModifyDate": "2021-05-25T01:03:23.664Z",
+    "deletedBy": 0,
+    "isDeleted": false,
+}
+
+export const tournmaentPlayerTest = {
+    "id": 0,
+    "guidId": "string",
+    "tournamentId": 0,
+    "playerId": 0,
+    "createdBy": 0,
+    "createdDate": "2021-05-25T01:12:18.586Z",
+    "lastModifyDate": "2021-05-25T01:12:18.586Z",
+    "deletedBy": 0,
+    "isDeleted": false,
+}
+export const tournmaentRoundTest = {
+    "id": 0,
+    "guidId": "string",
+    "tournamentId": 0,
+    "name": "string",
+    "createdBy": 0,
+    "createdDate": "2021-05-25T01:16:02.108Z",
+    "lastModifyDate": "2021-05-25T01:16:02.108Z",
+    "deletedBy": 0,
+    "isDeleted": false,
+}
+
+export const tournmaentRulesTest = {
+    "id": 0,
+    "guidId": "string",
+    "tournamentId": 0,
+    "tournamentRuleTypeId": 0,
+    "name": "string",
+    "orderItem": 0,
+    "numberOfParticipants": 0,
+    "numberOfGroups": 0,
+    "numberOfParticipantsInGroup": 0,
+    "numberOfWinnerInGroup": 0,
+    "numberOfRounds": 0,
+    "isRoundTrip": false,
+    "isRandomDistribution": false,
+    "calculatePoints": false,
+    "countOfWins": 0,
+    "countOfDraws": 0,
+    "countOflosses": 0,
+    "calculationBasedOnResult": false,
+    "pointBasedOnKill": 0,
+    "createdBy": 0,
+    "createdDate": "2021-05-25T01:18:03.454Z",
+    "lastModifyDate": "2021-05-25T01:18:03.454Z",
+    "deletedBy": 0,
+    "isDeleted": false,
+}
+export const tournmaentRuleTiebreakerTest: TournamentRuleTiebreaker = {
+    "id": 0,
+    "guidId": "string",
+    "tournamentRuleId": 0,
+    "tiebreakerId": 0,
+    "orderItem": 0,
+    "createdBy": 0,
+    "createdDate": "2021-05-25T01:24:37.169Z",
+    "lastModifyDate": "2021-05-25T01:24:37.169Z",
+    "deletedBy": 0,
+    "isDeleted": false,
+
+}
+export const tournmaentRuleWinnerOrderTest: TournamentRuleWinnerOrder = {
+    "id": 0,
+    "guidId": "string",
+    "tournamentRuleId": 0,
+    "name": "string",
+    "countOfPoint": 0,
+    "createdBy": 0,
+    "createdDate": "2021-05-25T01:31:33.321Z",
+    "lastModifyDate": "2021-05-25T01:31:33.321Z",
+    "deletedBy": 0,
+    "isDeleted": false,
+
+}
